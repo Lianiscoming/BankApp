@@ -1,0 +1,23 @@
+
+spring:
+  datasource:
+    driver-class-name: org.mariadb.jdbc.Driver
+    url: jdbc:mariadb://localhost:3306/springboot
+    username: Lian
+    password: tkfkdgo12!
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: create-drop
+    properties:
+      hibernate:
+        format_sql: true
+logging:
+  level:
+    root: info
+    web: info
+    sql: error
+    org.hibernate: error
+    org.springframework: error
+    portfolio.bankapp: info
+# springdoc ??, actuator ?? ?? ??? ?
